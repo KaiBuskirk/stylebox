@@ -4,22 +4,22 @@
 }
 .fab-container{
   position:fixed;
-  bottom:50px;
-  right:50px;
+  bottom:20px;
+  right:20px;
   cursor:pointer;
 }
 .iconbutton{
     width:50px;
     height:50px;
-    border-radius: 100%;
+    border-radius: 50%;
     background-color: #ff8800;
     box-shadow: 10px 10px 5px #aaaaaa;
     
 }
 
 .button{
-  width:60px;
-  height:60px;
+  width:50px;
+  height:50px;
   background: #393939;
 }
 
@@ -35,6 +35,12 @@
     position: absolute;
     bottom: 70px;
     right: 0;
+    opacity: 0;
+    transition: all 0.3s;
+    transform: scale(0);
+    transform-origin: 80% bottom;
+
+
   }
 
   .options li{
@@ -54,3 +60,7 @@
     box-shadow: 10px 10px 5px #aaaaaa;
   }
   
+  .button:hover+.options, .options:hover{
+    opacity: 1;
+    transform: scale(1);
+  }
