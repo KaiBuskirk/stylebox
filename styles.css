@@ -3,18 +3,18 @@
   padding: 0;
 }
 .fab-container{
-  position:fixed;
+  position:absolute;
   bottom:20px;
   right:20px;
   cursor:pointer;
 }
-.iconbutton{
+.iconbutton {
     width:50px;
     height:50px;
     border-radius: 50%;
     background-color: #ff8800;
     box-shadow: 10px 10px 5px #aaaaaa;
-    
+    transition: background-color 0.4s;
 }
 
 .button{
@@ -23,13 +23,18 @@
   background: #393939;
 }
 
-.iconbutton i{
+.iconbutton i {
    display:flex;
    align-items: center;
    justify-content: center;
    height: 100%;
    color: white;
+   font-size: 25px;
   }
+  .iconbutton:hover {
+      background-color:rgba(83, 51, 0, 0.697)
+    }
+
   .options{
     list-style-type: none;
     position: absolute;
@@ -54,10 +59,10 @@
     margin-right: 10px;
     align-self: center;
     user-select: none;
-    background-color: black;
+    background-color: rgba(128, 128, 128, 0.662);
     color: white;
     border-radius: 3px;
-    box-shadow: 10px 10px 5px #aaaaaa;
+    box-shadow: 10px 10px 5px #d7d7d7;
   }
   
   .button:hover+.options, .options:hover{
